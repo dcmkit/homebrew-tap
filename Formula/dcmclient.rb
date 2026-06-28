@@ -6,28 +6,28 @@
 class Dcmclient < Formula
   desc "DICOM tools as a command-line toolbox and an agent (MCP) surface, in one binary"
   homepage "https://dcmkit.github.io/dcmclient/"
-  version "0.4.0"
+  version "0.4.5"
   license "Apache-2.0"
 
   on_macos do
     on_arm do
-      url "https://github.com/dcmkit/dcmclient/releases/download/v0.4.0/dcmclient-macos-arm64"
-      sha256 "73ecb36496161d3c1baaa790a89278bbe9df767d245d5140d74f1fec61c68641"
+      url "https://github.com/dcmkit/dcmclient/releases/download/v0.4.5/dcmclient-macos-arm64"
+      sha256 "f618812f40022fcad8baac266d0a38ebbbb018001aba9d7afbdbc61abab8be77"
     end
     on_intel do
-      url "https://github.com/dcmkit/dcmclient/releases/download/v0.4.0/dcmclient-macos-x86_64"
-      sha256 "7dce4518b43aca3a86149c6b2a491a486996ee5c2e10aabcf2a1879b79f0b597"
+      url "https://github.com/dcmkit/dcmclient/releases/download/v0.4.5/dcmclient-macos-x86_64"
+      sha256 "7784bee2208b5ea29059af93b8e681c7244d0b2fc37cce44db297f4bef90ae4d"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/dcmkit/dcmclient/releases/download/v0.4.0/dcmclient-linux-aarch64"
-      sha256 "fa0a294ab3707c8e717fe9cfe97ffd43455ac8ce0938f48e67907914de05495e"
+      url "https://github.com/dcmkit/dcmclient/releases/download/v0.4.5/dcmclient-linux-aarch64"
+      sha256 "5d6b45b9a88b1772db65263adc163d3d157f5cb05497d16f157a4c2c09da36e8"
     end
     on_intel do
-      url "https://github.com/dcmkit/dcmclient/releases/download/v0.4.0/dcmclient-linux-x86_64"
-      sha256 "bb80d8c4ce26997c0a28719d68c833a5e1df9aa85fd474d71724fdc3310c9c4f"
+      url "https://github.com/dcmkit/dcmclient/releases/download/v0.4.5/dcmclient-linux-x86_64"
+      sha256 "61001f5e4288cf782f0ac16a6ddab24f65f8ed66126c3658cc4f2ea2cf456baf"
     end
   end
 
@@ -37,6 +37,6 @@ class Dcmclient < Formula
   end
 
   test do
-    assert_match "dcmclient 0.4.0", shell_output("#{bin}/dcmclient --version")
+    assert_match "dcmclient 0.4.5", shell_output("#{bin}/dcmclient --version")
   end
 end
